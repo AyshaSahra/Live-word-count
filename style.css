@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(100deg,rgb(250, 161, 161),rgb(246, 203, 124),rgb(250, 231, 147));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.heading{
+    text-align: center;
+    padding-bottom:2%;
+}
+
+.write-space{
+    padding:30px 30px 50px 30px ;
+    background-color: rgb(177, 167, 167);
+    border-radius: 8px;
+    width: 90vmin;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.count-area{
+    width: 90vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding-top: 3%;
+}
+
+.count-letter{
+    width: 38%;
+    margin-top: 3%;
+    padding: 20px;
+    background-color:  rgb(177, 167, 167);
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    border-radius: 5px;
+}
+.count-word{
+    width: 35%;
+    margin-top: 3%;
+    padding: 20px;
+    background-color:  rgb(177, 167, 167);
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.count-space{
+    width: 35%;
+    margin-top: 3%;
+    padding: 20px;
+    background-color:  rgb(177, 167, 167);
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    border-radius: 5px;
+}
