@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Word count</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="page">
+        <header class="heading">
+            <h1>Live Word Counter</h1>
+        </header>
+            
+        <div class="write-space">
+            <textarea id="input-textarea" rows="12" placeholder="Start Typing here...."></textarea>
+        </div>
+        <div class="count-area">
+            <div class="count-letter">
+                <p>Letter Count</p>
+                <h3 id="letter-count">0</h3>
+            </div>
+            <div class="count-word">
+                <p>Word Count</p>
+                <h3 id="word-count">0</h3>
+            </div>
+            <div class="count-space">
+                <p>Space Count</p>
+                <h3 id="space-count">0</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputTextArea = document.getElementById('input-textarea');
+        const charCount = document.getElementById('letter-count');
+        const wordCount = document.getElementById('word-count');
+        const spaceCount = document.getElementById('space-count');
+
+
+        inputTextArea.addEventListener('input', () => {
+            charCount.textContent = inputTextArea.value.length;
+
+            let txt = inputTextArea.value.trim();
+            wordCount.textContent = txt.split(/\s+/).filter((item) => item).length;
+            spaceCount.textContent = inputTextArea.value.split(" ").length - 1;
+        })
+    </script>
+</body>
+</html>
